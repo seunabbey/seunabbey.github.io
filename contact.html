@@ -62,7 +62,6 @@
 <script>
   const form = document.getElementById('contact-form');
   const thankYouMessage = document.getElementById('thank-you');
-  const formArea = document.getElementById('form-area');
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -79,14 +78,15 @@
         }
       });
 
-      formArea.style.display = 'none';
-      thankYouMessage.style.display = 'block';
+      form.style.display = 'none'; // hide only the form
+      thankYouMessage.style.display = 'block'; // show the thank-you message
     } catch (error) {
       alert('Oops! Something went wrong. Please try again later.');
     }
   });
 </script>
-
+  
 </body>
 </html>
+
 
