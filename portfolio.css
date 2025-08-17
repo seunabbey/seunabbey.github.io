@@ -462,6 +462,55 @@ select:focus {
   box-shadow: 0 4px 15px rgba(0, 171, 240, 0.3);
 }
 
+/* Mobile devices (up to 600px wide) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* slightly smaller text */
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .home-content, .about, .services, .portfolio, .contact {
+    flex-direction: column; /* stack sections vertically */
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cta button {
+    width: 100%; /* buttons take full width on small screens */
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Tablets (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 
 
 
