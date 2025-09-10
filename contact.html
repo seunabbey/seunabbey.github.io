@@ -9,52 +9,53 @@
   <title>Contact Form:</title>
 </head>
 
-<body>
+<body class="contact">
     <header class="header">
-    <a href="index.html" class="logo">Seun O. A.</a>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="#" class="active">Contact</a>
-    </nav>
-</header>
+      <a href="index.html" class="logo">Seun O. A.</a>
+      <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="#" class="active">Contact</a>
+      </nav>
+    </header>
 
-<section class="form-container">
-  <div id="form-area">
-    <form id="contact-form" action="https://formspree.io/f/mwpqwvnq" method="POST">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+<section class="form-container" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="https://formspree.io/f/mwpqwvnq" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
 
-      <label for="service">Select a Service</label>
-      <select id="service" name="service" required>
-        <option value="">-- Please choose an option --</option>
-        <option value="Website Design">Website Design</option>
-        <option value="WordPress Customization">WordPress Customization</option>
-        <option value="SEO Optimization">SEO Optimization</option>
-        <option value="Website Maintenance">Website Maintenance</option>
-        <option value="Mobile UI Design">Mobile UI Design</option>
-      </select>
+    <label for="service">Select a Service</label>
+    <select id="service" name="service" required>
+      <option value="">-- Please choose an option --</option>
+      <option value="Website Design">Website Design</option>
+      <option value="WordPress Customization">WordPress Customization</option>
+      <option value="SEO Optimization">SEO Optimization</option>
+      <option value="Website Maintenance">Website Maintenance</option>
+      <option value="Mobile UI Design">Mobile UI Design</option>
+    </select>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-      <div class="submit-row">
-        <button type="submit">Send Message</button>
+    <div class="submit-row">
+      <button type="submit" class="btn">Send Message</button>
 
-        <div class="home-sci">
-            <a href="https://facebook.com/blackmercury" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="https://x.com/coach_laolu" target="_blank"><i class='bx bxl-twitter'></i></a>
-            <a href="https://linkedin.com/in/oluwaseun-oladipupo-abiodun" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        </div>
+      <div class="home-sci">
+          <a href="https://facebook.com/blackmercury" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://x.com/coach_laolu" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://linkedin.com/in/oluwaseun-oladipupo-abiodun" target="_blank"><i class='bx bxl-linkedin'></i></a>
       </div>
-    </form>
-    
-    <div id="thank-you" style="display: none; color: #00abf0; font-size: 20px; text-align: center; padding: 50px 0;">
+
+    </div>
+  </form>
+  
+  <div id="thank-you" style="display: none; color: #00abf0; font-size: 20px; text-align: center; padding: 50px 0;">
     ✅ Thank you! Your message has been sent successfully.
   </div>
 </section>
@@ -62,6 +63,7 @@
 <script>
   const form = document.getElementById('contact-form');
   const thankYouMessage = document.getElementById('thank-you');
+  const formArea = document.getElementById('form-area');
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -78,15 +80,13 @@
         }
       });
 
-      form.style.display = 'none'; // hide only the form
-      thankYouMessage.style.display = 'block'; // show the thank-you message
+      formArea.style.display = 'none';
+      thankYouMessage.style.display = 'block';
     } catch (error) {
       alert('Oops! Something went wrong. Please try again later.');
     }
   });
 </script>
-  
+
 </body>
 </html>
-
-
