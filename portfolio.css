@@ -5,10 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     color: #ededed;
     background-image: url('mohammad-rahmani.jpg') no-repeat;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -21,6 +23,7 @@ body {
     align-items: center;
     z-index: 100;
 }
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -28,6 +31,7 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
 .logo::before {
     content: '';
     position: absolute;
@@ -39,6 +43,7 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 4s;
 }
+
 .navbar a {
     font-size: 18px;
     color: #ededed;
@@ -47,6 +52,7 @@ body {
     margin-left: 35px;
     transition: 3s;
 }
+
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
@@ -61,21 +67,32 @@ body {
     align-items: center;
     padding: 0 10%;
     position: relative;
+    
+}
+.home {
+  height: 100vh;               /* always full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* keep content near the top */
+  padding: 0 10%;
+  position: relative;
 }
 
-
 .home-content {
-    width: 600px;
-    padding-top: 100px; /* space below header */
-    padding-bottom: 40px;
-    z-index: 2;
+  max-width: 900px;            /* 🔹 wider content area */
+  width: 100%;
+  padding-top: 60px;           /* 🔹 small buffer below header */
+  padding-bottom: 40px;
+  z-index: 2;
 }
 
 .home-content h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
+  margin-top: 20px;            /* 🔹 spacing above heading */
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
 }
+
 .home-content h1::before {
     content: '';
     position: absolute;
@@ -510,6 +527,7 @@ select:focus {
     flex-wrap: wrap;
   }
 }
+
 
 
 
