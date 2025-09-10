@@ -19,11 +19,6 @@ body {
   overflow: hidden; /* disable scroll by default */
 }
 
-/* Contact page override */
-body.contact {
-  overflow: auto; /* enable scroll only on contact page */
-}
-
 /* Sections with backgrounds */
 .home,
 .portfolio-section,
@@ -39,12 +34,13 @@ body.contact {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 100px;
   padding: 20px 10px;
   background: transparent; /* background image shows through */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .logo {
@@ -92,7 +88,7 @@ body.contact {
 .home-content {
   max-width: 900px;
   width: 100%;
-  padding-top: 100px; /* 🔹 spacing below header */
+  padding-top: 50px; /* 🔹 spacing below header */
   padding-bottom: 40px;
   z-index: 2;
 }
@@ -311,9 +307,14 @@ button {
   align-items: center;
   justify-content: space-evenly;
   min-height: 100vh;
-  padding: 100px;
+  padding: 40px;
   box-sizing: border-box;
   position: relative;
+}
+
+/* Target the form container by ID */
+#contact {
+  scroll-margin-top: 100px; /* same as your header height */
 }
 
 label {
