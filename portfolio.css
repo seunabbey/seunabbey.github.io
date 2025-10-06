@@ -204,7 +204,7 @@ body {
   background: transparent;
   transition: 3s;
   animation: manipActiveHover .1s forwards;
-  animation-delay: 4s;
+  animation-delay: 3s;
   pointer-events: none;
   opacity: 0;
   z-index: 1;
@@ -212,7 +212,7 @@ body {
 
 .home-imgHover:hover {
   background: #081b29;
-  opacity: .7;
+  opacity: .6;
 }
 
 .home-imgHover::after {
@@ -572,11 +572,6 @@ select:focus {
     max-width: 100%;
   }
 
-  .home-imgHover img {
-    display: none;
-    width: 0;
-  }
-
   /* Header */
   .header {
     height: 70px;
@@ -765,6 +760,10 @@ select:focus {
   .portfolio-section,
   .form-container {
     background-attachment: scroll;
+  }
+
+  .home-imgHover {
+    display: none !important;
   }
 }
 
