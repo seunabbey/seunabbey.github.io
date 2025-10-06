@@ -14,7 +14,7 @@ html {
 
 body {
   color: #ededed;
-  background: url('mohammad-rahmani.jpg') no-repeat center center / cover;
+  background: url('mohammad-rahmani.webp') no-repeat center center / cover;
   overflow-x: auto;
   overflow-y: auto;
   font-size: 12px;
@@ -23,7 +23,7 @@ body {
 .home,
 .portfolio-section,
 .form-container {
-  background: url('mohammad-rahmani.jpg') no-repeat center center / cover;
+  background: url('mohammad-rahmani.webp') no-repeat center center / cover;
   background-attachment: fixed;
   min-height: 100vh;
   min-width: auto;
