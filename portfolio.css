@@ -17,12 +17,14 @@ body {
   background: url('mohammad-rahmani.webp') no-repeat center center / cover;
   overflow-x: auto;
   overflow-y: auto;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .home,
 .portfolio-section,
-.form-container {
+.form-container, 
+#about, 
+#services {
   background: url('mohammad-rahmani.webp') no-repeat center center / cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -758,7 +760,9 @@ select:focus {
   /* Disable fixed background on mobile */
   .home,
   .portfolio-section,
-  .form-container {
+  .form-container,
+  #about, 
+  #services {
     background-attachment: scroll;
   }
 
@@ -803,4 +807,5 @@ select:focus {
     height: 300px;
     object-fit: cover;
   }
+
 }
