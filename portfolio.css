@@ -14,7 +14,7 @@ html {
 
 body {
   color: #ededed;
-  background: url('mohammad-rahmani.webp') no-repeat center center / cover;
+  background: url('mohammad-rahmani.jpg') no-repeat center center / cover;
   overflow-x: auto;
   overflow-y: auto;
   font-size: 16px;
@@ -25,7 +25,7 @@ body {
 .form-container, 
 #about, 
 #services {
-  background: url('mohammad-rahmani.webp') no-repeat center center / cover;
+  background: url('mohammad-rahmani.jpg') no-repeat center center / cover;
   background-attachment: fixed;
   min-height: 100vh;
   min-width: auto;
@@ -809,3 +809,4 @@ select:focus {
   }
 
 }
+
